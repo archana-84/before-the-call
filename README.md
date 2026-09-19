@@ -1,2 +1,3 @@
-# before-the-call
-Predicting campaign response before outreach using leakage-aware and capacity-based modeling.
+# Before the Call
+
+Predicting campaign response before outreach.
