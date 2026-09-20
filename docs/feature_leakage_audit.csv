@@ -1,0 +1,22 @@
+feature,feature_family,availability_at_decision_time,primary_decision,rationale,risk_or_limitation,planned_sensitivity_check
+age,client,known before call,INCLUDE,Recorded client attribute available before outreach,Demographic feature requiring subgroup and sensitivity review,Compare model performance with age excluded
+job,client,known before call,INCLUDE,Recorded client attribute available before outreach,May act as a socioeconomic proxy,Compare model performance without demographic variables
+marital,client,known before call,INCLUDE,Recorded client attribute available before outreach,Potentially sensitive demographic information,Compare model performance without demographic variables
+education,client,known before call,INCLUDE,Recorded client attribute available before outreach,May act as a socioeconomic proxy and includes unknown values,Compare model performance without demographic variables
+default,client,known before call,INCLUDE,Existing credit-default status is available before outreach,Contains substantial unknown values and only a few yes observations,Preserve unknown and inspect coefficient stability
+housing,client,known before call,INCLUDE,Existing housing-loan status is available before outreach,Contains unknown values,Preserve unknown as a category
+loan,client,known before call,INCLUDE,Existing personal-loan status is available before outreach,Contains unknown values,Preserve unknown as a category
+contact,current campaign,known if channel is assigned before scoring,INCLUDE,The project decision time assumes the communication channel has been scheduled,Could be unavailable for earlier campaign-planning decisions,Compare strict model without scheduling variables
+month,current campaign,known if call date is assigned before scoring,INCLUDE,The project decision time assumes the call month has been scheduled,Acts as a time and campaign-regime proxy,Compare strict model without scheduling variables
+day_of_week,current campaign campaign,known if call date is assigned before scoring,INCLUDE,The project decision time assumes the weekday has been scheduled,May reflect operational scheduling decisions,Compare strict model without scheduling variables
+duration,current call,unavailable before call,EXCLUDE,Call duration is learned only after the call begins,Direct post-decision leakage,Use only in a clearly labeled leakage demonstration
+campaign,current campaign,ambiguous timing,EXCLUDE,The field includes the current or last contact and may summarize campaign activity not safely known at the selected decision time,Possible future-information leakage,Test only in a separately labeled sensitivity model
+pdays,previous campaign,known before call,INCLUDE,Previous-campaign recency is historical information,Value 999 has ambiguous sentinel behavior,Preserve 999 separately and do not use it alone as a prior-contact flag
+previous,previous campaign,known before call,INCLUDE,Counts contacts completed before the current campaign,No customer identifier is available to validate repeated-client history,Create previous-contact indicator from this field
+poutcome,previous campaign,known before call,INCLUDE,Previous campaign outcome is historical information,Strong signal may not generalize when campaign strategy changes,Review temporal stability
+emp.var.rate,economic context,known on call date,INCLUDE,Quarterly economic indicator would have been observable at scoring time,Strong time proxy that may drift,Compare model without economic-context variables
+cons.price.idx,economic context,known on call date,INCLUDE,Monthly economic indicator would have been observable at scoring time,Strong time proxy that may drift,Compare model without economic-context variables
+cons.conf.idx,economic context,known on call date,INCLUDE,Monthly economic indicator would have been observable at scoring time,Strong time proxy that may drift,Compare model without economic-context variables
+euribor3m,economic context,known on call date,INCLUDE,Daily interest-rate indicator would have been observable at scoring time,Strong time proxy that may drift,Compare model without economic-context variables
+nr.employed,economic context,known on call date,INCLUDE,Quarterly employment indicator would have been observable at scoring time,Strong time proxy that may drift,Compare model without economic-context variables
+y,target,known after outcome,EXCLUDE,This is the prediction target,Using it as an input would be direct target leakage,Not applicable

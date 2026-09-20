@@ -1,0 +1,21 @@
+feature,feature_family,feature_type,distinct_values,null_cells,unknown_cells,top_value,top_value_count,top_value_share,minimum,median,maximum
+job,client,categorical,12,0,330,admin.,10422,0.25303486452364765,,,
+marital,client,categorical,4,0,80,married,24928,0.6052248227639119,,,
+education,client,categorical,8,0,1731,university.degree,12168,0.29542585218995826,,,
+default,client,categorical,3,0,8597,no,32588,0.7912013207730407,,,
+housing,client,categorical,3,0,990,yes,21576,0.5238418956977761,,,
+loan,client,categorical,3,0,990,no,33950,0.8242692046227057,,,
+contact,current campaign,categorical,2,0,0,cellular,26144,0.6347479848499563,,,
+month,current campaign,categorical,10,0,0,may,13769,0.3342963970088375,,,
+day_of_week,current campaign,categorical,5,0,0,thu,8623,0.2093570942993105,,,
+poutcome,previous campaign,categorical,3,0,0,nonexistent,35563,0.8634310964358551,,,
+age,client,numeric,78,0,0,31,1947,0.04727104982033602,17.0,38.0,98.0
+duration,current call,numeric,1544,0,0,85,170,0.004127415752160824,0.0,180.0,4918.0
+campaign,current campaign,numeric,42,0,0,1,17642,0.42832863940953675,1.0,2.0,56.0
+pdays,previous campaign,numeric,27,0,0,999,39673,0.9632174419733903,0.0,999.0,999.0
+previous,previous campaign,numeric,8,0,0,0,35563,0.8634310964358551,0.0,0.0,7.0
+emp.var.rate,economic context,numeric,10,0,0,1.4,16234,0.39414392541516946,-3.4,1.1,1.4
+cons.price.idx,economic context,numeric,26,0,0,93.994,7763,0.18847722637661454,92.201,93.749,94.767
+cons.conf.idx,economic context,numeric,26,0,0,-36.4,7763,0.18847722637661454,-50.8,-41.8,-26.9
+euribor3m,economic context,numeric,316,0,0,4.857,2868,0.069631931630572,0.634,4.857,5.045
+nr.employed,economic context,numeric,11,0,0,5228.1,16234,0.39414392541516946,4963.6,5191.0,5228.1
