@@ -1,0 +1,24 @@
+check,status,details
+Expected row count,PASS,"Expected 41,188; found 41,188."
+Expected column count,PASS,Expected 21; found 21.
+Expected column names and order,PASS,Columns match the documented schema.
+Conventional null cells,PASS,Found 0 null cells.
+Exact duplicate rows,WARN,Found 12 exact duplicate rows. They will not be automatically removed because no customer or contact identifier is available.
+Allowed values: job,PASS,No unexpected categories.
+Allowed values: marital,PASS,No unexpected categories.
+Allowed values: education,PASS,No unexpected categories.
+Allowed values: default,PASS,No unexpected categories.
+Allowed values: housing,PASS,No unexpected categories.
+Allowed values: loan,PASS,No unexpected categories.
+Allowed values: contact,PASS,No unexpected categories.
+Allowed values: month,PASS,No unexpected categories.
+Allowed values: day_of_week,PASS,No unexpected categories.
+Allowed values: poutcome,PASS,No unexpected categories.
+Allowed values: y,PASS,No unexpected categories.
+Infinite numeric values,PASS,Found 0 infinite numeric cells.
+Plausible age values,PASS,Observed range: 17 to 98 years.
+Nonnegative call duration,PASS,Minimum duration: 0 seconds.
+Campaign contact count,PASS,Observed range: 1 to 56.
+Previous contact count,PASS,Observed range: 0 to 7.
+Previous-contact day range,PASS,Observed range: 0 to 999.
+Previous contacts and previous outcome,PASS,`previous = 0` agrees with `poutcome = nonexistent`.

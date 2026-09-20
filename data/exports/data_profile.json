@@ -1,0 +1,297 @@
+{
+  "generated_at_utc": "2026-09-20T01:53:06.381770+00:00",
+  "source_file": "bank-additional-full.csv",
+  "row_count": 41188,
+  "column_count": 21,
+  "columns": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "contact",
+    "month",
+    "day_of_week",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed",
+    "y"
+  ],
+  "target": {
+    "counts": {
+      "no": 36548,
+      "yes": 4640
+    },
+    "positive_rate": 0.11265417111780131
+  },
+  "pandas_null_cells": 0,
+  "unknown_category_counts": {
+    "job": 330,
+    "marital": 80,
+    "education": 1731,
+    "default": 8597,
+    "housing": 990,
+    "loan": 990
+  },
+  "exact_duplicate_rows": 12,
+  "numeric_summary": {
+    "age": {
+      "minimum": 17.0,
+      "median": 38.0,
+      "maximum": 98.0,
+      "distinct_values": 78
+    },
+    "duration": {
+      "minimum": 0.0,
+      "median": 180.0,
+      "maximum": 4918.0,
+      "distinct_values": 1544
+    },
+    "campaign": {
+      "minimum": 1.0,
+      "median": 2.0,
+      "maximum": 56.0,
+      "distinct_values": 42
+    },
+    "pdays": {
+      "minimum": 0.0,
+      "median": 999.0,
+      "maximum": 999.0,
+      "distinct_values": 27
+    },
+    "previous": {
+      "minimum": 0.0,
+      "median": 0.0,
+      "maximum": 7.0,
+      "distinct_values": 8
+    },
+    "emp.var.rate": {
+      "minimum": -3.4,
+      "median": 1.1,
+      "maximum": 1.4,
+      "distinct_values": 10
+    },
+    "cons.price.idx": {
+      "minimum": 92.201,
+      "median": 93.749,
+      "maximum": 94.767,
+      "distinct_values": 26
+    },
+    "cons.conf.idx": {
+      "minimum": -50.8,
+      "median": -41.8,
+      "maximum": -26.9,
+      "distinct_values": 26
+    },
+    "euribor3m": {
+      "minimum": 0.634,
+      "median": 4.857,
+      "maximum": 5.045,
+      "distinct_values": 316
+    },
+    "nr.employed": {
+      "minimum": 4963.6,
+      "median": 5191.0,
+      "maximum": 5228.1,
+      "distinct_values": 11
+    }
+  },
+  "category_counts": {
+    "job": {
+      "admin.": 10422,
+      "blue-collar": 9254,
+      "technician": 6743,
+      "services": 3969,
+      "management": 2924,
+      "retired": 1720,
+      "entrepreneur": 1456,
+      "self-employed": 1421,
+      "housemaid": 1060,
+      "unemployed": 1014,
+      "student": 875,
+      "unknown": 330
+    },
+    "marital": {
+      "married": 24928,
+      "single": 11568,
+      "divorced": 4612,
+      "unknown": 80
+    },
+    "education": {
+      "university.degree": 12168,
+      "high.school": 9515,
+      "basic.9y": 6045,
+      "professional.course": 5243,
+      "basic.4y": 4176,
+      "basic.6y": 2292,
+      "unknown": 1731,
+      "illiterate": 18
+    },
+    "default": {
+      "no": 32588,
+      "unknown": 8597,
+      "yes": 3
+    },
+    "housing": {
+      "yes": 21576,
+      "no": 18622,
+      "unknown": 990
+    },
+    "loan": {
+      "no": 33950,
+      "yes": 6248,
+      "unknown": 990
+    },
+    "contact": {
+      "cellular": 26144,
+      "telephone": 15044
+    },
+    "month": {
+      "may": 13769,
+      "jul": 7174,
+      "aug": 6178,
+      "jun": 5318,
+      "nov": 4101,
+      "apr": 2632,
+      "oct": 718,
+      "sep": 570,
+      "mar": 546,
+      "dec": 182
+    },
+    "day_of_week": {
+      "thu": 8623,
+      "mon": 8514,
+      "wed": 8134,
+      "tue": 8090,
+      "fri": 7827
+    },
+    "poutcome": {
+      "nonexistent": 35563,
+      "failure": 4252,
+      "success": 1373
+    },
+    "y": {
+      "no": 36548,
+      "yes": 4640
+    }
+  },
+  "chronological_month_blocks": [
+    {
+      "start_row": 1,
+      "month": "may"
+    },
+    {
+      "start_row": 7764,
+      "month": "jun"
+    },
+    {
+      "start_row": 12138,
+      "month": "jul"
+    },
+    {
+      "start_row": 18823,
+      "month": "aug"
+    },
+    {
+      "start_row": 23998,
+      "month": "oct"
+    },
+    {
+      "start_row": 24065,
+      "month": "nov"
+    },
+    {
+      "start_row": 27681,
+      "month": "dec"
+    },
+    {
+      "start_row": 27691,
+      "month": "mar"
+    },
+    {
+      "start_row": 27973,
+      "month": "apr"
+    },
+    {
+      "start_row": 30431,
+      "month": "may"
+    },
+    {
+      "start_row": 36225,
+      "month": "jun"
+    },
+    {
+      "start_row": 36940,
+      "month": "jul"
+    },
+    {
+      "start_row": 37118,
+      "month": "aug"
+    },
+    {
+      "start_row": 37888,
+      "month": "sep"
+    },
+    {
+      "start_row": 38155,
+      "month": "oct"
+    },
+    {
+      "start_row": 38602,
+      "month": "nov"
+    },
+    {
+      "start_row": 38959,
+      "month": "dec"
+    },
+    {
+      "start_row": 39131,
+      "month": "mar"
+    },
+    {
+      "start_row": 39395,
+      "month": "apr"
+    },
+    {
+      "start_row": 39569,
+      "month": "may"
+    },
+    {
+      "start_row": 39781,
+      "month": "jun"
+    },
+    {
+      "start_row": 40010,
+      "month": "jul"
+    },
+    {
+      "start_row": 40321,
+      "month": "aug"
+    },
+    {
+      "start_row": 40554,
+      "month": "sep"
+    },
+    {
+      "start_row": 40857,
+      "month": "oct"
+    },
+    {
+      "start_row": 41061,
+      "month": "nov"
+    }
+  ],
+  "history_field_notes": {
+    "pdays_999_with_previous_contacts": 4110,
+    "interpretation": "Do not use pdays=999 alone to identify clients with no previous contact. Use previous and poutcome together and treat pdays=999 as a special sentinel category."
+  }
+}
