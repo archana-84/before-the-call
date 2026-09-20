@@ -1,0 +1,23 @@
+feature,category,observations,subscribers,response_rate
+unknown_pattern,none,19275,975,0.05058365758754864
+unknown_pattern,default,6447,283,0.04389638591592989
+unknown_pattern,education,616,29,0.04707792207792208
+unknown_pattern,"housing, loan",459,15,0.032679738562091505
+unknown_pattern,"education, default",390,14,0.035897435897435895
+unknown_pattern,"default, housing, loan",178,6,0.033707865168539325
+unknown_pattern,"job, default",68,2,0.029411764705882353
+unknown_pattern,job,66,4,0.06060606060606061
+unknown_pattern,"job, education, default",65,2,0.03076923076923077
+unknown_pattern,"job, education",35,2,0.05714285714285714
+unknown_pattern,marital,28,2,0.07142857142857142
+unknown_pattern,"education, default, housing, loan",16,0,0.0
+unknown_pattern,"education, housing, loan",13,1,0.07692307692307693
+unknown_pattern,"marital, default",7,0,0.0
+unknown_pattern,"job, marital",4,1,0.25
+unknown_pattern,"job, marital, education",3,2,0.6666666666666666
+unknown_pattern,"job, default, housing, loan",2,0,0.0
+unknown_pattern,"job, education, default, housing, loan",2,0,0.0
+unknown_pattern,"marital, education, default",2,0,0.0
+unknown_pattern,"job, marital, education, default",2,0,0.0
+unknown_pattern,"job, housing, loan",1,0,0.0
+unknown_pattern,"marital, education",1,0,0.0

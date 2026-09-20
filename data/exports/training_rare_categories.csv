@@ -1,0 +1,6 @@
+feature,category,observations,subscribers,response_rate
+default,yes,3,0,0.0
+education,illiterate,12,1,0.08333333333333333
+poutcome,success,35,3,0.08571428571428572
+marital,unknown,47,5,0.10638297872340426
+month,oct,67,42,0.6268656716417911

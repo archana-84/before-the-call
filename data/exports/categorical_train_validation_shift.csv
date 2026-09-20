@@ -1,0 +1,11 @@
+feature,total_variation_distance,training_distinct_values,validation_distinct_values,unseen_validation_categories
+month,0.7195447976878613,6,4,3
+contact,0.4203696336948757,2,2,0
+poutcome,0.2733783366889654,3,3,0
+default,0.10719471866813879,3,2,0
+job,0.09738450130977896,12,12,0
+marital,0.0901464841635816,4,4,0
+education,0.0833323861791258,8,8,0
+day_of_week,0.07518699530211513,5,5,0
+housing,0.06888774328332359,3,3,0
+loan,0.008451998224762397,3,3,0
