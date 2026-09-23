@@ -1,0 +1,40 @@
+{
+  "selection_status": "locked_before_test_evaluation",
+  "selected_base_model": "logistic_no_economic",
+  "selected_calibration_method": "sigmoid",
+  "source_feature_count": 13,
+  "base_model_training_partition": "train",
+  "calibration_partition": "validation",
+  "test_partition_status": "untouched",
+  "selection_basis": [
+    "More stable probabilities after removing economic variables that were outside their training ranges during validation.",
+    "Best later-validation sigmoid Brier score among the finalist models.",
+    "Best later-validation sigmoid log loss among the finalist models.",
+    "Competitive top-10-percent and top-20-percent ranking performance."
+  ],
+  "capacity_policy": {
+    "selection_method": "Rank observations by calibrated probability and select the highest-scoring observations.",
+    "reported_capacities": [
+      0.1,
+      0.2
+    ],
+    "fixed_probability_threshold": null,
+    "reason": "Operational capacity determines queue size; a default 0.5 threshold is not appropriate."
+  },
+  "validation_fit_summary": {
+    "observations": 8544,
+    "observed_response_rate": 0.12792602996254682,
+    "mean_calibrated_probability": 0.1279466566939827,
+    "average_precision": 0.224370902493683,
+    "brier_score": 0.1070889460261762,
+    "log_loss": 0.36451504553615266,
+    "warning": "These calibration metrics are in-sample because the final calibrator was fitted on the complete validation partition. They are not final generalization estimates."
+  },
+  "claim_boundaries": [
+    "The model predicts historical subscription response, not the causal effect of contacting an observation.",
+    "The dataset does not identify unique customers, so repeated-customer leakage cannot be ruled out.",
+    "Month-level chronology is inferred from documented row ordering; exact contact dates are unavailable.",
+    "Results come from historical Portuguese banking campaigns and do not establish current US-market performance.",
+    "No revenue or profit claim is made without an explicitly labeled assumed-value scenario."
+  ]
+}
