@@ -1,0 +1,2 @@
+model,training_observations,validation_observations,training_prevalence,validation_prevalence,mean_predicted_probability,average_precision,precision_at_0_5,recall_at_0_5,brier_score,calibration_gap
+dummy_training_prior,27680,8544,0.04833815028901734,0.12792602996254682,0.048338150289017334,0.12792602996254682,0.0,0.0,0.11789519141149658,-0.07958787967352948
