@@ -1,0 +1,4 @@
+dataset_split,observations,subscribers,non_subscribers,response_rate
+train,27680,1338,26342,0.04833815028901734
+validation,8544,1093,7451,0.12792602996254682
+test,4964,2209,2755,0.4450040290088638
