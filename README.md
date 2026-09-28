@@ -1,6 +1,12 @@
 # Before the Call
 
-### Predicting campaign response before outreach
+**Predicting campaign response before outreach**
+
+[View the live Streamlit demonstration](https://before-the-call-3cv4yk76yrhgyurwmp3mqx.streamlit.app/)
+
+Before the Call is an end-to-end data science project that examines whether historical term-deposit subscription outcomes can be ranked using information available before a marketing call. The project emphasizes leakage prevention, chronological evaluation, probability calibration, limited-capacity decision analysis, and responsible model reporting.
+
+> **Important:** This is a retrospective demonstration using historical Portuguese bank-marketing data. It does not estimate the causal effect of contacting someone, demonstrate campaign uplift, or represent current US-market performance.
 
 An end-to-end data science project that asks whether historical bank-marketing observations can be ranked before a call when contact capacity is limited.
 
